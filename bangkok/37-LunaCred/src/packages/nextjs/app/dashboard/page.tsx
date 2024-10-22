@@ -203,7 +203,7 @@ const Dashboard: React.FC = () => {
                         id="address"
                         placeholder="Enter address"
                         onChange={e => setStakeForAddress(e.target.value)}
-                        className="p-2 rounded outline-none border-2 border-[#07d3ba]  text-black"
+                        className="p-2 rounded outline-none border-2 border-[#07d3ba]  text-white"
                       />
                       <label htmlFor="quantity" className="font-semibold text-[#fff]">
                         Stake Quantity
@@ -366,7 +366,7 @@ const Dashboard: React.FC = () => {
         ? ethers.utils.formatUnits(credScore.result, 2)
         : 0)) /
       100}{" "} */}
-                            MAND by Thursday 00:01 UTC
+                            CRED by Thursday 00:01 UTC
                           </div>
                         </div>
                       </div>
@@ -380,8 +380,8 @@ const Dashboard: React.FC = () => {
                       How is credibility calculated?
                     </div>
                     <div className="description">
-                      When your friend stakes 25 $GLMR tokens on your address you get √25 = 5 credibility points. This
-                      is{" "}
+                      When your friend stakes 10 $GLMR tokens on your address you get 30% of 10 = 3 credibility points. This
+                      is similar to {" "}
                       <a
                         target="_blank"
                         href="https://towardsdatascience.com/what-is-quadratic-voting-4f81805d5a06"
